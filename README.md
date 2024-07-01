@@ -27,12 +27,19 @@ Users should be able to:
 
 ### Screenshot
 
+<img width="900" alt="image" src="https://github.com/angela-tylee/mortgage-repayment-calculator/assets/145020731/8bcbf75a-a8a5-48b7-bec9-032f2e7adb4b">
+<img width="900" alt="image" src="https://github.com/angela-tylee/mortgage-repayment-calculator/assets/145020731/0a4ae545-cb15-4163-a5a4-70694a01b1af">
 
+<img width="400" alt="image" src="https://github.com/angela-tylee/mortgage-repayment-calculator/assets/145020731/6f129d03-1140-43bc-b35c-47427581843b">
+<img width="400" alt="image" src="https://github.com/angela-tylee/mortgage-repayment-calculator/assets/145020731/8011a448-989d-48ba-8711-4d6693526654">
+
+<img width="331" alt="image" src="https://github.com/angela-tylee/mortgage-repayment-calculator/assets/145020731/9e6cd9c9-6dec-4710-a280-c672c16ed974">
+<img width="366" alt="image" src="https://github.com/angela-tylee/mortgage-repayment-calculator/assets/145020731/c69b705d-d16b-4fed-ad95-4025a548714d">
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/angela-tylee/mortgage-repayment-calculator
+- Live Site URL: https://angela-tylee.github.io/mortgage-repayment-calculator/
 
 ## My process
 
