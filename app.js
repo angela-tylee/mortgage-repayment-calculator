@@ -108,7 +108,6 @@ function formatNumber(value, finalFormat = false) {
             value = (value.startsWith('-') ? '-$' : '$') + value.replace('-', '');
         }
 
-        console.log(value);
         return value;
     }
 };
