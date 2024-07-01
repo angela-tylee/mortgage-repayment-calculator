@@ -16,49 +16,53 @@
     <div class="calculator">
       <div class="calculator-title">
         <h1>Mortgage Calculator</h1>
-        <a href="">Clear All</a>
+        <a id="clear-all">Clear All</a>
       </div>
 
-      <div class="input-block">
-        <label for="amount">Mortgage Amount</label>
-        <div class="input-group input-group-1">
-          <input type="number" id="amount" class="input-amount">
-          <div class="unit"><span>£</span></div>
-        </div>
-      </div>
-
-      <div class="input-block">
-        <div>
-          <label for="term">Mortgage Term</label>
-          <div class="input-group">
-            <input type="number" id="term" class="input-term">
-            <div class="unit"><span>years</span></div>
+      <form action="/">
+        <div class="input-block">
+          <label for="amount">Mortgage Amount</label>
+          <div class="input-group input-group-1">
+            <input type="number" id="amount" class="input-amount" required>
+            <div class="unit"><span>£</span></div>
           </div>
         </div>
-        <div>
-          <label for="rate">Interest Rate</label>
-          <div class="input-group">
-            <input type="number" id="rate" class="input-rate">
-            <div class="unit"><span>%</span></div>
+
+        <div class="input-block">
+          <div>
+            <label for="term">Mortgage Term</label>
+            <div class="input-group">
+              <input type="number" id="term" class="input-term" required>
+              <div class="unit"><span>years</span></div>
+            </div>
+          </div>
+          <div>
+
+            <label for="rate">Interest Rate</label>
+            <div class="input-group">
+              <input type="number" id="rate" class="input-rate" max="100" required>
+              <div class="unit"><span>%</span></div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="input-block">
-        <label for="">Mortgage Type</label>
-        <div class="input-group">
-          <input type="radio" id="type" name="type" class="input-type">
-          <label for="type">Repayment</label>
+        <div class="input-block">
+          <label for="">Mortgage Type</label>
+          <div class="input-group" id="radio-input-group">
+            <input type="radio" id="type" name="type" class="input-type" value="repayment" required>
+            <label for="type">Repayment</label>
+          </div>
+          <div class="input-group" id="radio-input-group">
+            <input type="radio" id="type" name="type" class="input-type" value="interestOnly" required>
+            <label for="type">Interest Only</label>
+          </div>
         </div>
-        <div class="input-group">
-          <input type="radio" id="type" name="type" class="input-type">
-          <label for="type">Interest Only</label>
-        </div>
-      </div>
-      <button>
-        <img src="./assets/images/icon-calculator.svg" alt="icon-calculator">
-        <span>Calculate Repayments</span>
-      </button>
+        <button type="button" id="calculator-btn">
+          <img src="./assets/images/icon-calculator.svg" alt="icon-calculator">
+          <span>Calculate Repayments</span>
+        </button>
+      </form>
+
     </div>
 
     <div class="result">
@@ -75,7 +79,7 @@
       </div>
       <!-- Empty results end -->
       <!-- Completed results start -->
-      <!-- <div class="result-completed">
+      <div class="result-completed hidden">
         <h1>Your results</h1>
         <p>
           Your results are shown below based on the information you provided.
@@ -84,21 +88,24 @@
         <div class="calculated-result">
           <div class="monthly-repayment-container">
             <p>Your monthly repayments</p>
-            <p class="monthly-repayment">£1,797.74</p>
+            <p class="monthly-repayment">£<span id="monthly-repayment">0.00</span></p>
           </div>
           <div class="total-repayment-container">
             <p>Total you'll repay over the term</p>
-            <p class="total-repayment">£539,322.94</p>
+            <p class="total-repayment">£<span id="total-repayment">0.00</span></p>
           </div>
         </div>
-      </div> -->
+      </div>
       <!-- Completed results end -->
     </div>
 </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/angela-tylee">angela</a>.
+    </div>
+  </footer>
+  <script src="./app.js"></script>
 </body>
 </html>
